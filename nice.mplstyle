@@ -619,13 +619,13 @@ legend.borderpad:     0.5  # border whitespace # CUSTOMIZED
 ## ***************************************************************************
 ## * ERRORBAR PLOTS                                                          *
 ## ***************************************************************************
-#errorbar.capsize: 0  # length of end cap on error bars in pixels
+errorbar.capsize: 3  # length of end cap on error bars in pixels
 
 
 ## ***************************************************************************
 ## * HISTOGRAM PLOTS                                                         *
 ## ***************************************************************************
-#hist.bins: 10  # The default number of histogram bins or 'auto'.
+hist.bins: 10  # The default number of histogram bins or 'auto'.
 
 
 ## ***************************************************************************

@@ -582,7 +582,7 @@ legend.borderpad:     0.5  # border whitespace # CUSTOMIZED
                                # expressed as a fraction of the average axis height
 
 ## Figure layout
-#figure.autolayout: False  # When True, automatically adjust subplot
+figure.autolayout: True  # When True, automatically adjust subplot
                            # parameters to make the plot fit the figure
                            # using `tight_layout`
 #figure.constrained_layout.use: False  # When True, automatically make plot
@@ -685,12 +685,12 @@ hist.bins: 10  # The default number of histogram bins or 'auto'.
 #savefig.dpi:       figure      # figure dots per inch or 'figure'
 #savefig.facecolor: auto        # figure face color when saving
 #savefig.edgecolor: auto        # figure edge color when saving
-#savefig.format:    png         # {png, ps, pdf, svg}
-#savefig.bbox:      standard    # {tight, standard}
+savefig.format:    pdf         # {png, ps, pdf, svg}
+savefig.bbox:      tight    # {tight, standard}
                                 # 'tight' is incompatible with pipe-based animation
                                 # backends (e.g. 'ffmpeg') but will work with those
                                 # based on temporary files (e.g. 'ffmpeg_file')
-#savefig.pad_inches:  0.1       # padding to be used, when bbox is set to 'tight'
+savefig.pad_inches:  0.0       # padding to be used, when bbox is set to 'tight'
 #savefig.directory:   ~         # default directory in savefig dialog, gets updated after
                                 # interactive saves, unless set to the empty string (i.e.
                                 # the current directory); use '.' to start at the current

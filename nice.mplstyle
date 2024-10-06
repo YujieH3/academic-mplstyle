@@ -259,12 +259,12 @@ lines.antialiased: True            # render lines in antialiased (no jaggies) # 
 ## relative to font.size, using the following values: xx-small, x-small,
 ## small, medium, large, x-large, xx-large, larger, or smaller
 
-font.family:  serif
+font.family:  monospace
 #font.style:   normal
 #font.variant: normal
 #font.weight:  normal
 #font.stretch: normal
-font.size:    16.0 # CUSTOMIZED
+font.size:    14.0 # CUSTOMIZED
 
 font.serif:      DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
 font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
@@ -333,7 +333,7 @@ font.monospace:  DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typ
                         # loaded, depending on your font settings.
 
 ## The following settings allow you to select the fonts in math mode.
-mathtext.fontset: cm  # Should be 'dejavusans' (default), # CUSTOMIZED
+mathtext.fontset: dejavusans  # Should be 'dejavusans' (default), # CUSTOMIZED
                                # 'dejavuserif', 'cm' (Computer Modern), 'stix',
                                # 'stixsans' or 'custom'
 ## "mathtext.fontset: custom" is defined by the mathtext.bf, .cal, .it, ...
@@ -410,11 +410,7 @@ mathtext.fontset: cm  # Should be 'dejavusans' (default), # CUSTOMIZED
 
 #axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
                            # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-axes.prop_cycle: (cycler('color', ['003473', 'A8AABC', '434655', 'A54653', '747687', 'BFA5A6', 'A8AABC'])
-                  + cycler('linestyle', ['-', '--', ':', '-.'])
-                  + cycler('marker', ['o', 's', 'v', 'd'])
-)
-                  # cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf']) # matplotlib default
+#axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
                   # color cycle for plot lines as list of string color specs:
                   # single letter, long name, or web-style hex
                   # As opposed to all other parameters in this file, the color
@@ -429,7 +425,7 @@ axes.prop_cycle: (cycler('color', ['003473', 'A8AABC', '434655', 'A54653', '7476
                             # If "round_numbers", after application of margins, axis
                             # limits are further expanded to the nearest "round" number.
 #polaraxes.grid: True  # display grid on polar axes
-axes3d.grid:    True  # display grid on 3D axes
+#axes3d.grid:    True  # display grid on 3D axes
 
 #axes3d.xaxis.panecolor:    (0.95, 0.95, 0.95, 0.5)  # background pane on 3D axes
 #axes3d.yaxis.panecolor:    (0.90, 0.90, 0.90, 0.5)  # background pane on 3D axes
@@ -582,7 +578,7 @@ legend.borderpad:     0.5  # border whitespace # CUSTOMIZED
                                # expressed as a fraction of the average axis height
 
 ## Figure layout
-figure.autolayout: True  # When True, automatically adjust subplot
+#figure.autolayout: False  # When True, automatically adjust subplot
                            # parameters to make the plot fit the figure
                            # using `tight_layout`
 #figure.constrained_layout.use: False  # When True, automatically make plot
@@ -623,13 +619,13 @@ figure.autolayout: True  # When True, automatically adjust subplot
 ## ***************************************************************************
 ## * ERRORBAR PLOTS                                                          *
 ## ***************************************************************************
-errorbar.capsize: 3  # length of end cap on error bars in pixels
+#errorbar.capsize: 0  # length of end cap on error bars in pixels
 
 
 ## ***************************************************************************
 ## * HISTOGRAM PLOTS                                                         *
 ## ***************************************************************************
-hist.bins: 10  # The default number of histogram bins or 'auto'.
+#hist.bins: 10  # The default number of histogram bins or 'auto'.
 
 
 ## ***************************************************************************
@@ -685,12 +681,12 @@ hist.bins: 10  # The default number of histogram bins or 'auto'.
 #savefig.dpi:       figure      # figure dots per inch or 'figure'
 #savefig.facecolor: auto        # figure face color when saving
 #savefig.edgecolor: auto        # figure edge color when saving
-savefig.format:    pdf         # {png, ps, pdf, svg}
-savefig.bbox:      tight    # {tight, standard}
+#savefig.format:    png         # {png, ps, pdf, svg}
+#savefig.bbox:      standard    # {tight, standard}
                                 # 'tight' is incompatible with pipe-based animation
                                 # backends (e.g. 'ffmpeg') but will work with those
                                 # based on temporary files (e.g. 'ffmpeg_file')
-savefig.pad_inches:  0.0       # padding to be used, when bbox is set to 'tight'
+#savefig.pad_inches:  0.1       # padding to be used, when bbox is set to 'tight'
 #savefig.directory:   ~         # default directory in savefig dialog, gets updated after
                                 # interactive saves, unless set to the empty string (i.e.
                                 # the current directory); use '.' to start at the current

@@ -113,7 +113,7 @@
 ## ***************************************************************************
 ## See https://matplotlib.org/stable/api/artist_api.html#module-matplotlib.lines
 ## for more information on line properties.
-#lines.linewidth: 1.5               # line width in points
+lines.linewidth: 1.0              # line width in points
 #lines.linestyle: -                 # solid line
 #lines.color:     C0                # has no affect on plot(); see axes.prop_cycle
 #lines.marker:          None        # the default marker
@@ -259,15 +259,15 @@ lines.antialiased: True            # render lines in antialiased (no jaggies) # 
 ## relative to font.size, using the following values: xx-small, x-small,
 ## small, medium, large, x-large, xx-large, larger, or smaller
 
-font.family:  monospace
+font.family:  sans-serif
 #font.style:   normal
 #font.variant: normal
 #font.weight:  normal
 #font.stretch: normal
-font.size:    14.0 # CUSTOMIZED
+font.size:    12.0 # CUSTOMIZED
 
 font.serif:      DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
-font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+font.sans-serif: Avenir, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
 font.cursive:    Apple Chancery, Textile, Zapf Chancery, Sand, Script MT, Felipa, Comic Neue, Comic Sans MS, cursive
 font.fantasy:    Chicago, Charcoal, Impact, Western, Humor Sans, xkcd, fantasy
 font.monospace:  DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace
@@ -333,7 +333,7 @@ font.monospace:  DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typ
                         # loaded, depending on your font settings.
 
 ## The following settings allow you to select the fonts in math mode.
-mathtext.fontset: dejavusans  # Should be 'dejavusans' (default), # CUSTOMIZED
+mathtext.fontset: cm  # Should be 'dejavusans' (default), # CUSTOMIZED
                                # 'dejavuserif', 'cm' (Computer Modern), 'stix',
                                # 'stixsans' or 'custom'
 ## "mathtext.fontset: custom" is defined by the mathtext.bf, .cal, .it, ...
@@ -558,7 +558,7 @@ legend.borderpad:     0.5  # border whitespace # CUSTOMIZED
 #figure.labelsize:   large     # size of the figure label (``Figure.sup[x|y]label()``)
 #figure.labelweight: normal    # weight of the figure label
 #figure.figsize:     6.4, 4.8  # figure size in inches
-#figure.dpi:         100       # figure dots per inch
+figure.dpi:         196       # figure dots per inch
 #figure.facecolor:   white     # figure face color
 #figure.edgecolor:   white     # figure edge color
 #figure.frameon:     True      # enable figure frame
